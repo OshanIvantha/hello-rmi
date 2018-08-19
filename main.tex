@@ -21,7 +21,7 @@
 
 % Colors
 \definecolor{whiteColor}{RGB}{255,255,255}
-\definecolor{veryLightGreenColor}{RGB}{218,242,215}
+\definecolor{veryLightGreenColor}{RGB}{232,245,233}
 \definecolor{darkGreenColor}{RGB}{27,94,32}
 \definecolor{darkTealColor}{RGB}{0,77,64}
 
@@ -29,7 +29,7 @@
 \sectionfont{\color{darkTealColor}}
 
 
-\title{\Huge The Islandss}
+\title{\Huge The Island}
 \date{}
 \author{O.I. Mudannayake \\~ 15000893 ~}
     
@@ -37,9 +37,10 @@
     
 % \maketitle
 
-\tikz[remember picture,overlay] \node[opacity=0.9,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{images/cover_a4.png}};
+\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{images/cover_a4.png}};
 \tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\resizebox{\linewidth}{!}{\color{veryLightGreenColor} The Island}};
-\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (7,-24){\Huge\color{veryLightGreenColor} O.I. Mudannayake \\~ 15000893 ~};
+\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (7,-24){\LARGE\color{veryLightGreenColor} O.I. Mudannayake \\~ 15000893 ~};
+\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (7,-25){\LARGE\color{veryLightGreenColor} B.C.P.S.K. Peris \\~ 15000941 ~};
 \clearpage
 
 \newpage
@@ -50,15 +51,12 @@
   
 \newpage
 
-\input{sections/story-and-overview.tex}
-\input{sections/characters.tex}
-\input{sections/inventory.tex}
-\input{sections/game-design.tex}
-\input{sections/technical.tex}
+\input{sections/team.tex} \newpage
+\input{sections/story-and-overview.tex} \newpage
+\input{sections/characters.tex} \newpage
+\input{sections/inventory.tex} \newpage
+\input{sections/game-design.tex} \newpage
+\input{sections/technical.tex} \newpage
 \input{sections/level-design.tex}
-\input{sections/development.tex}
-\input{sections/graphics.tex}
-\input{sections/sounds-music.tex}
-\input{sections/schedule.tex}
  
 \end{document}
