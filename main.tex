@@ -2,10 +2,16 @@
 
 % Page settings
 \usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
-    
+
+% Colors
+\usepackage{color}
+
 % Font
 \usepackage[sfdefault]{roboto}
 \usepackage[T1]{fontenc}
+
+% Font colors
+\usepackage{xcolor,sectsty}
 
 % Graphics
 \usepackage{graphicx}
@@ -13,15 +19,27 @@
 % Background images
 \usepackage{tikz}
 
-\title{\Large The Islandss}
+% Colors
+\definecolor{whiteColor}{RGB}{255,255,255}
+\definecolor{veryLightGreenColor}{RGB}{218,242,215}
+\definecolor{darkGreenColor}{RGB}{27,94,32}
+\definecolor{darkTealColor}{RGB}{0,77,64}
+
+\subsectionfont{\color{darkTealColor}}
+\sectionfont{\color{darkTealColor}}
+
+
+\title{\Huge The Islandss}
 \date{}
 \author{O.I. Mudannayake \\~ 15000893 ~}
     
 \begin{document}
     
-\maketitle
+% \maketitle
 
 \tikz[remember picture,overlay] \node[opacity=0.9,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{images/cover_a4.png}};
+\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\resizebox{\linewidth}{!}{\color{veryLightGreenColor} The Island}};
+\tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (7,-24){\Huge\color{veryLightGreenColor} O.I. Mudannayake \\~ 15000893 ~};
 \clearpage
 
 \newpage
@@ -35,7 +53,6 @@
 \input{sections/story-and-overview.tex}
 \input{sections/characters.tex}
 \input{sections/inventory.tex}
-
 \input{sections/game-design.tex}
 \input{sections/technical.tex}
 \input{sections/level-design.tex}
