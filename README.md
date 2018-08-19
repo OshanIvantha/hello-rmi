@@ -1,1 +1,1 @@
-# hello-rmi
+# The Island - Game Design Document
