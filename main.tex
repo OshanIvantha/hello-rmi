@@ -16,6 +16,9 @@
 % Graphics
 \usepackage{graphicx}
 
+% Images
+\usepackage{float}
+
 % Background images
 \usepackage{tikz}
 
@@ -28,6 +31,9 @@
 \subsectionfont{\color{darkTealColor}}
 \sectionfont{\color{darkTealColor}}
 
+% \setlength{\parindent}{4em}
+% \setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
 
 \title{\Huge The Island}
 \date{}
@@ -51,12 +57,14 @@
   
 \newpage
 
+\large 
+
 \input{sections/team.tex} \newpage
 \input{sections/story-and-overview.tex} \newpage
 \input{sections/characters.tex} \newpage
-\input{sections/inventory.tex} \newpage
-\input{sections/game-design.tex} \newpage
-\input{sections/technical.tex} \newpage
-\input{sections/level-design.tex}
+\input{sections/inventory.tex} \newpage 
+% \input{sections/game-design.tex} \newpage
+% \input{sections/technical.tex} \newpage
+% \input{sections/level-design.tex}
  
 \end{document}
