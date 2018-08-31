@@ -1,5 +1,46 @@
 \section{Technical}
-    \subsection{Screens}
+    % \subsection{Screens}
+    \subsection{Frontend flow chart}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{images/frontflow}
+        \end{figure}
     \subsection{Controls}
         \includegraphics[width=\linewidth]{images/keyboard_layout.png} \newpage
         \includegraphics[width=\linewidth]{images/mouse_layout.png}
+    \subsection{Rules}
+        \subsection{Operational}
+            \begin{itemize}
+                \item All the players have a health of 100.
+                \item All the players have a stamina of 100.
+                \item Decease of health only occurs fro ma direct hit of the weapon.
+            \end{itemize}
+        \subsection{Implicit}
+            \begin{itemize}
+                \item Deals with good sportsmanship / honorable play.
+                \item Flexible according to the occasion.
+            \end{itemize}
+        \subsection{Constructive}
+            \begin{itemize}
+                \item -
+            \end{itemize}
+    \subsection{Interaction matrix}
+    \begin{center}
+        \begin{tabular}{ |c|c|c|c|c|c|c| } 
+            \hline
+             & Player & NPC & Tree & Weapon & Item & Wall \\
+             \hline
+             Player & Collide & Collide & Collide & Collide & Collide & Collide \\
+             \hline
+             NPC & Collide & Collide & Collide & Collide & Collide & Collide \\
+             \hline
+             Tree & Collide & Collide & - & - & - & - \\
+             \hline
+             Weapon & Collide & Collide & Collide & Collide & Collide & Collide \\
+             \hline
+             Item & Collide & Collide & Collide & Collide & Collide & Collide \\
+             \hline
+             Wall & Collide & Collide & - & - & - & - \\
+            \hline
+        \end{tabular}
+    \end{center}
